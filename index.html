@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--head part contains links and document title-->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--inserting an icon ext to the name of the document-->
+    <!--flaticon is the site we use to download icons-->
+    <link rel="icon" href="speed.png" type="image">
+    <!--you moght ignore this line for now-->
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<!--body contains header, main and footer-->
+<body>
+    <header>
+        <!--header contains nthe nav tag short for navbar and subtitles-->
+        <!--aria label is for detailing -->
+    <nav aria-label="firstnav">
+        <ul>
+            <li><a href="#adress">my adress</a></li>
+        </ul>
+        <!-- when you add id to ul or to h1, preferably u name it the same as aria-label but you also should change aria-label by aria-labelledby--> 
+    </nav>
+    <nav aria-label="secondnav">
+        <h1>Things I forgot to mention</h1>
+    </nav>
+    <h2>Sub-Title</h2>
+    <h3>Sub-Title</h3>
+    <h4>Sub-Title</h4>
+    <h5>Sub-Title</h5>
+    <h6>Sub-Title</h6>
+</header>
+<main>
+    <!--&lt is less than comparison symbol / &gt is for greater than-->
+    <code>&lt;h1&gt;hello world&lt;h1&gt;</h1></code>
+    <!--hr is a tag that draws a horizontal line you might use it to seperate sections-->
+    <hr>
+    <!--article is one of the semantic tags, usually we use section or div but when we write article instead we know that the following section will contain an article-->
+    <article>
+        <p>Artificial Intelligence (AI) has emerged as a transformative force in modern society, reshaping industries, influencing decision-making processes, and challenging traditional notions of human capability. AI, a branch of computer science that focuses on creating systems capable of performing tasks that typically require human intelligence, has evolved from its theoretical origins to practical applications across various domains. One of the most notable applications of AI is in the realm of automation. Industries such as manufacturing, logistics, and customer service have harnessed the power of AI-driven robots and algorithms to streamline operations and increase efficiency. Robotic arms tirelessly assemble intricate components, algorithms optimize supply chain routes, and chatbots provide instant customer support. While this automation has undoubtedly improved productivity, it has also raised concerns about job displacement and the need for upskilling the workforce to adapt to the changing employment landscape.</p>
+    </article>
+
+    <hr>
+    <section>
+        <!--adding a paragraph-->
+    <p>the horizontal rule is a line that seperates whatever two texts</p>
+    <hr>
+    <!--dl is for description list, dt is for description title, dd is description details -->
+    <dl>
+        <dt>hello</dt>
+        <dd>guys</dd>
+    </dl>
+    <hr>
+    <!--inserting an abbreviation-->
+    <p>inserting abbreviation &nbsp;&nbsp;&nbsp;<abbr title="facebook"><a href="https://www.facebook.com/">FB</a></abbr></p>
+    <!--br takes us to the next line-->
+    <br><br> 
+    <!--&nbsp is used to insert space-->
+    <!--command used to once clicking the image you have you download it-->
+    <p>download &nbsp;<a href="speed.png" download>my icon</a></p>
+    <!--hovering/moving the mouse on "my professional" will show an email-->
+        <p>contact at &nbsp;<a href="aya.hachana@medtech.tn">my professional</a></p>
+        <!--clicking on "research motor will direct you to another website"-->
+        <!--target=blank is used to your link opens in a new window-->
+        <p><a href="https://www.google.com/" target="_blank">research motor</a></p>
+        <br><br><br><br><br><br><br><br><br><br>
+        <!--figure is a semantic tag that wraps the image and its caption-->
+        <figure>
+        <img src="https://th.bing.com/th/id/OIP.Vt3kGu4X6WQlmH91GpJpzgHaFH?pid=ImgDet&rs=1>" alt="gabes" loading="lazy">
+        <!--adding a caption that is centered under the image-->
+        <figcaption>
+            Gabes beach
+        </figcaption>
+    </figure>
+    <aside>
+        <!--adding details, a line that has a symbol at its beginning that once clicked will show more infos in a second line we called summary-->
+        <details>
+            <summary>
+                guess <mark>what</mark> time is it
+            </summary> 
+                <p><time datetime="08:00">8 am</time></p>
+            
+        </details>
+        <!--adding a table-->
+        <table>
+            <!--each table has rows tr, cells td, and headers th-->
+            <!--in this tr we will make three headers-->
+            <tr>
+                <!--caption in table is a line that comes before the line containing th and that serves as a comment or a title for the table-->
+                <caption>a header of headers</caption>
+                <!--thead is a semantic tag that wraps th-->
+                <thead>
+                <th>header1</th>
+                <th>header2</th>
+                <th>header3</th>
+            </thead>
+            </tr>
+            <!--in this tr we will create the cells -->
+            <tr>
+                <!--tbody is also a semantic tag that wraps the table cells-->
+                <tbody>
+                <td>cell1</td>
+                <td>cell2</td>
+                <td>cell3</td>
+            </tbody>
+            </tr>
+            <tr><!--footer is a semantic tag that tells the code reader that we are creating the last line of the table-->
+                <footer>
+                    <td>last line input1</td>
+                    <td>last line input 2</td>
+                    <td>last line input3</td>
+                </footer>
+            </tr>
+        </table>
+            <!-- scope written next to th or td tells if column(col) or row(row)-->
+    </aside>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+</main>
+    <footer>
+        <!--this tag will help you write an adress in an appealing way-->
+    <adress id="adress">
+        rue Moheddine Klibi<br>
+        Riadh Al Andalous<br>
+        7520
+    </adress>
+    <!--&copy adds a circle containg a letter c, used in telling that something has copy rights thus u will be sued if you steal content-->
+    <p>&lt;&copy;<a href="about.html"> name </a>&gt;</p>
+    <!--href="#" ill tell you about it next session because it needs a demo-->
+    <a href="#">go top</a>
+</footer>
+</body>
+</html>

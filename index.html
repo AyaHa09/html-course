@@ -10,60 +10,196 @@
     <!--you moght ignore this line for now-->
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
+
+
+
 <!--body contains header, main and footer-->
 <body>
+
+
     <header>
         <!--header contains nthe nav tag short for navbar and subtitles-->
         <!--aria label is for detailing -->
+
     <nav aria-label="firstnav">
         <ul>
+            <!--# replaces the word ID which we've set when writing the adress section, so href="#adress" will take us to the part of code which has an ID called adress-->
             <li><a href="#adress">my adress</a></li>
         </ul>
         <!-- when you add id to ul or to h1, preferably u name it the same as aria-label but you also should change aria-label by aria-labelledby--> 
     </nav>
+
     <nav aria-label="secondnav">
-        <h1>Things I forgot to mention</h1>
+    <h1>Things I forgot to mention</h1>
     </nav>
+
     <h2>Sub-Title</h2>
     <h3>Sub-Title</h3>
     <h4>Sub-Title</h4>
     <h5>Sub-Title</h5>
     <h6>Sub-Title</h6>
 </header>
+
+
 <main>
     <!--&lt is less than comparison symbol / &gt is for greater than-->
+    <!--the code tag is used to inform the text editor that you're about to insert text code to your website-->
     <code>&lt;h1&gt;hello world&lt;h1&gt;</h1></code>
+
     <!--hr is a tag that draws a horizontal line you might use it to seperate sections-->
     <hr>
+    <br><br><br><br><br>
+    <!--trying forms-->
+    <fieldset>
+    <form>
+        <input>
+        <!--placeholder is the text that appears inside of the box-->
+        <!--autocomplete suggests data you entered before-->
+        <!--required is for required-->
+        <!--pattern is for the pattern you should use when typing the numbers-->
+        <!--multiple size in the tag select enables you to choose multiple options-->
+    
+        <!--text input-->
+        <label for="firstName">FirstName</label>
+        <input type="text" name="FirstName" id="FirstName" placeholder="your name" autocomplete="on" required>
+    
+        <!--password input-->
+        <label for="passWord">Enter password</label>
+        <input type="password" name="passWord" id="passWord" placeholder="type here" required>
+
+
+        <!--phone number input-->
+        <label for="phone">Enter phone number</label>
+        <input type="tel" name="phone" id="phone" placeholder="555- 55- 555-555"
+        pattern="[0-9]{3}[0-9]{2}[0-9]{3}[0-9]{3}" required>
+
+
+        <!--select list-->
+        <label for="phone" >Your phone</label>
+        <select value="phone" id="phone">
+            <optgroup label="its OS">
+        <option name="android">android</option>
+        <option value="ios" selected>ios</option>
+        <option value="other">other</option>
+    </optgroup>
+        <optgroup label="its color">
+            <option value="black" selected>black</option>
+            <option value="silver">silver</option>
+        </optgroup>
+        </select>
+
+    <!--submit button-->
+        <label for="log in"></label>
+        <input type="button" value="log in">
+   
+        
+        <legend>Are you human ?</legend>
+<!--radio buttons-->
+        <input type="radio" name="tick" id="one" value="one"> 
+        <label for="tick">yes</label>
+        <input type="radio" name="tick" id="two" value="two">
+        <label for="tick">no</label>
+
+        <!--list of options-->
+
+        <label for="season">Favorite season</label>
+        <input type="text" id="season" name="season" list="seasons">
+        <datalist id="seasons">
+            <option value="summer">
+            <option value="winter">
+            <option value="spring">
+            <option value="autumn">
+        </datalist>
+        </form>
+        </fieldset>
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <fieldset>
+
+        <legend>What pet do you have?</legend>
+
+        <!--checkboxes-->
+        
+        <input type="checkbox" name="pets" id="dog" value="dog">
+        <label for="dog">Dog</label>
+        <input type="checkbox" name="pets" id="cat" value="cat">
+        <label for="cat">cat</label>
+        <input type="checkbox" name="pets" id="hamster" value="hamster">
+        <label for="hamster">hamster</label>
+        <input type="checkbox" name="pets" id="I don't" value="I don't">
+        <label for="I don't">I don't</label>
+
+    </fieldset>
+        
+
+    
+    
+
+
+
     <!--article is one of the semantic tags, usually we use section or div but when we write article instead we know that the following section will contain an article-->
+
     <article>
+
+        <!--filedset wraps your content in a box-->
+        <!--legend makes a space on the line of the box to add a text-->
+     <fieldset>
         <p>Artificial Intelligence (AI) has emerged as a transformative force in modern society, reshaping industries, influencing decision-making processes, and challenging traditional notions of human capability. AI, a branch of computer science that focuses on creating systems capable of performing tasks that typically require human intelligence, has evolved from its theoretical origins to practical applications across various domains. One of the most notable applications of AI is in the realm of automation. Industries such as manufacturing, logistics, and customer service have harnessed the power of AI-driven robots and algorithms to streamline operations and increase efficiency. Robotic arms tirelessly assemble intricate components, algorithms optimize supply chain routes, and chatbots provide instant customer support. While this automation has undoubtedly improved productivity, it has also raised concerns about job displacement and the need for upskilling the workforce to adapt to the changing employment landscape.</p>
+    </fieldset>
     </article>
 
     <hr>
     <section>
+
         <!--adding a paragraph-->
     <p>the horizontal rule is a line that seperates whatever two texts</p>
-    <hr>
+    
+
+
+
     <!--dl is for description list, dt is for description title, dd is description details -->
     <dl>
         <dt>hello</dt>
         <dd>guys</dd>
     </dl>
+
+
+
     <hr>
+
+
+
     <!--inserting an abbreviation-->
     <p>inserting abbreviation &nbsp;&nbsp;&nbsp;<abbr title="facebook"><a href="https://www.facebook.com/">FB</a></abbr></p>
+
+
+
     <!--br takes us to the next line-->
     <br><br> 
+
+
+
     <!--&nbsp is used to insert space-->
-    <!--command used to once clicking the image you have you download it-->
+
+
+
+    <!--the following is a command used to once clicking the image you have you download it-->
     <p>download &nbsp;<a href="speed.png" download>my icon</a></p>
+
+
     <!--hovering/moving the mouse on "my professional" will show an email-->
         <p>contact at &nbsp;<a href="aya.hachana@medtech.tn">my professional</a></p>
+
+
         <!--clicking on "research motor will direct you to another website"-->
         <!--target=blank is used to your link opens in a new window-->
         <p><a href="https://www.google.com/" target="_blank">research motor</a></p>
+
+
+
         <br><br><br><br><br><br><br><br><br><br>
+
+
         <!--figure is a semantic tag that wraps the image and its caption-->
         <figure>
         <img src="https://th.bing.com/th/id/OIP.Vt3kGu4X6WQlmH91GpJpzgHaFH?pid=ImgDet&rs=1>" alt="gabes" loading="lazy">
@@ -72,7 +208,12 @@
             Gabes beach
         </figcaption>
     </figure>
+
+
+    
     <aside>
+        <fieldset>
+            <legend>Things to add</legend>
         <!--adding details, a line that has a symbol at its beginning that once clicked will show more infos in a second line we called summary-->
         <details>
             <summary>
@@ -81,6 +222,8 @@
                 <p><time datetime="08:00">8 am</time></p>
             
         </details>
+
+
         <!--adding a table-->
         <table>
             <!--each table has rows tr, cells td, and headers th-->
@@ -112,22 +255,33 @@
                 </footer>
             </tr>
         </table>
-            <!-- scope written next to th or td tells if column(col) or row(row)-->
+ <!-- scope written next to th or td tells if column(col) or row(row)-->
+
+</fieldset>  
     </aside>
     </section>
     <br><br><br><br><br><br><br><br><br><br>
 </main>
+
+
     <footer>
+
         <!--this tag will help you write an adress in an appealing way-->
     <adress id="adress">
         rue Moheddine Klibi<br>
         Riadh Al Andalous<br>
         7520
     </adress>
+
+
     <!--&copy adds a circle containg a letter c, used in telling that something has copy rights thus u will be sued if you steal content-->
     <p>&lt;&copy;<a href="about.html"> name </a>&gt;</p>
-    <!--href="#" ill tell you about it next session because it needs a demo-->
+
+
+    <!--href="#" , initially the web page when it loads it will be of adress ":5500/index.html" which is the same as ":5500/index.html" -->
     <a href="#">go top</a>
+
+
 </footer>
 </body>
 </html>
